@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   vars:
-    hugo_version: 0.55.5
+    hugo_version: 0.61.1
   tasks:
     - name: fetch hugo release
       tags: [fetch]
