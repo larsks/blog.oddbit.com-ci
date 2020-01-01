@@ -3,6 +3,10 @@
   vars:
     hugo_version: 0.62.0
   tasks:
+    - name: announce hugo version
+      debug:
+        msg: "Using Hugo version {{ hugo_version }}"
+
     - name: fetch hugo release
       tags: [fetch]
       get_url:
